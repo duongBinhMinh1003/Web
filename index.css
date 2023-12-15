@@ -1,0 +1,154 @@
+.carousel-inner img {
+    height: 30vh;
+    min-height: 500px;
+    background-size: contain;
+}
+header{
+    z-index: 1;
+    width: 100%;
+}
+header .nav-link{
+   position: relative;
+   margin-right: 10px;
+}
+header .nav-link:hover{
+    color: #35a22c;
+}
+header .nav-link.active, 
+header .nav-link:hover
+{
+    color: #35a22c!important;   
+}
+
+
+header .nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background-color:#35a22c ;
+    width: 0;
+    transition: 0.3s;
+}
+header .nav-link:hover::before,
+header .nav-link.active::before
+{
+width: 100%;
+}
+
+
+
+
+
+
+.carousel-caption{
+    bottom: 50%;
+    transform: translateY(50%);
+}
+.carousel-caption img{
+    min-height: unset;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+/* .carousel-item::after{
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.3);
+} */
+.carousel-caption{
+    z-index: 1;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+}
+.carousel-indicators .active{
+    background-color: #fe6433;
+}
+.carousel-indicators {
+    margin-bottom: 3rem;
+}
+/* start project */
+.nav {
+    justify-content: center;
+}
+.nav-pills .nav-link.active{
+    background-color: #fe6433;
+    color: #fff;
+    border-color: #fe6433;
+}
+.nav-pills .nav-link{
+    border: 1px solid black;
+    color: black;
+    margin: 0px 12px;
+}
+/* grid system  bs5 */
+.project .row > *{
+    padding: 20px;
+} 
+.project .card{
+    border-radius: 16px;
+    overflow: hidden;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+.project .card-body{
+    
+    /* /* background: linear-gradient(90deg, hsla(192, 96%, 50%, 1) 0%, hsla(65, 92%, 54%, 1) 100%); */
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    border-top: none;
+    
+
+}
+
+.project .card:hover .card-body{
+    cursor: pointer;
+    color: #35a22c;
+    border-color:  #35a22c ;
+}
+/* Start skill */
+.skill {
+  background-image: url(./image/3.jpg);
+  color: white;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.skill .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.skill__item{
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    border: 1px solid silver;
+    border-radius: 16px;
+}
+.skill__item i{
+    font-size: 40px;
+    color: #35a22c;
+}
+.skill__item:hover{
+    background-color: black;
+    border-color: white;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.skill__item h4{
+    margin: 20px 0px;
+    font-weight: bold;
+
+}
+button.swal2-confirm.swal2-styled{
+    background-color: #fe6433;
+}

@@ -146,6 +146,11 @@ const updateCartCount = () => {
   if (cartCountElement) {
     cartCountElement.textContent = cartCount;
   }
+  Swal.fire({
+    title: "Thêm thành công!",
+    text: "You clicked the button!",
+    icon: "success"
+  });
 };
 
 const addToCartButtons = document.querySelectorAll('.addToCartButton');

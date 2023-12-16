@@ -206,6 +206,7 @@ function submitForm() {
     const summaryListItem = document.createElement('li');
     summaryListItem.innerHTML = `
       <p><strong>Product:</strong> ${item.productName}</p>
+      <p><strong>Price:</strong> ${item.productPrice}</p>
     `;
     summaryItemListElement.appendChild(summaryListItem);
   });

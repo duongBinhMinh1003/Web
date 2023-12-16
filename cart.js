@@ -146,7 +146,11 @@ const updateCartCount = () => {
   if (cartCountElement) {
     cartCountElement.textContent = cartCount;
   }
+<<<<<<< HEAD
   Swal.fire({
+=======
+    Swal.fire({
+>>>>>>> 243c150abce2963d481d5d446c36245f6b2d535a
     title: "Thêm thành công!",
     text: "You clicked the button!",
     icon: "success"
